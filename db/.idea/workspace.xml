@@ -162,20 +162,6 @@
               <item name="db" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
-            <path>
-              <item name="db" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\jia jun\Database-project\static" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="db" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\jia jun\Database-project\static" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="css" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="db" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\jia jun\Database-project\static" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="html" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -252,12 +238,12 @@
       <workItem from="1590837985013" duration="4859000" />
       <workItem from="1590898566784" duration="728000" />
       <workItem from="1590975889318" duration="3899000" />
-      <workItem from="1590991541405" duration="6795000" />
+      <workItem from="1590991541405" duration="7401000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26917000" />
+    <option name="totallyTimeSpent" value="27523000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
