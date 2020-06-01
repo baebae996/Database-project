@@ -17,8 +17,15 @@
         
         <form id="register" name="myform" action=""
           method="post">
+          <select id="role" name="role">
+                <option value="user">普通用户</option>
+                <option value="seller">商家</option>
+            </select>
+
+            <p id="remind_0"></p>
+
             <input id="username" type="text" name="username" 
-            placeholder="请输入用户名"  onfocus="oFocus_1()" onblur="oBlur_1()">
+            placeholder="请输入用户名称/商家名称"  onfocus="oFocus_1()" onblur="oBlur_1()">
             
             <p id="remind_1"></p>
 

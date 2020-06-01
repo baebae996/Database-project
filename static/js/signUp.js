@@ -26,7 +26,7 @@
 
             if(oUsername.length==0)
             {
-                document.getElementById("remind_1").innerHTML="手机号码不能为空！";
+                document.getElementById("remind_1").innerHTML="用户名称/商家名称不能为空！";
             }else if(oUsername.length==6)
             {
                 document.getElementById("remind_1").innerHTML="";
@@ -45,7 +45,7 @@
                 document.getElementById("remind_2").innerHTML="密码不能为空！";
             }else if(oPassword.length==6)
             {
-                document.getElementById("remind_2").innerHTML=""
+                document.getElementById("remind_2").innerHTML="";
             }else
             {
                 document.getElementById("remind_2").innerHTML="请输入长度为6位的字母、数字组合";
@@ -60,7 +60,7 @@
                 document.getElementById("remind_3").innerHTML="密码不能为空！";
             }else if(oPassword2.length==6)
             {
-                document.getElementById("remind_3").innerHTML=""
+                document.getElementById("remind_3").innerHTML="";
             }else
             {
                 document.getElementById("remind_3").innerHTML="请输入长度为6位的字母、数字组合";

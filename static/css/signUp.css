@@ -53,9 +53,31 @@
 
 .box #register {
     display: block;
-    height: 280px;
+    height: 350px;
     padding: 6% 4%;
     background: #f0f0f0;
+}
+
+#register #role {
+    width: 324px;
+    background: #fff;
+    /* margin-bottom: 26px; */
+    border: 1px solid #ccc;
+    padding: 4%;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 85%;
+    color: #555;
+}
+
+#register #remind_0 {
+    width: 80%;
+    height: 26px;
+    /* margin: 0 auto 2px; */
+    /* margin-left: 2px; */
+    text-align: left;
+    text-indent: 5px;
+    font-size: 0.6em;
+    color: #f00;
 }
 
 #register #remind_1 {
