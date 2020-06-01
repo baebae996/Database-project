@@ -40,7 +40,7 @@
             document.getElementById("remind_2").innerHTML="密码不能为空！";
         }else if(oPassword.length==6)
         {
-            document.getElementById("remind_2").innerHTML=""
+            document.getElementById("remind_2").innerHTML="";
         }else
         {
             document.getElementById("remind_2").innerHTML="请输入长度为6位的字母、数字组合";
