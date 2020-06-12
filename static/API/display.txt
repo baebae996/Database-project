@@ -1,0 +1,31 @@
+商品展示页面：display.html
+
+放置所有商品的容器：
+div class="show" id="goodList"
+每次上架新商品，就往这个容器里添加一个class="goods"的div
+
+每件商品包含5个元素
+
+1、图片
+将img标签放在class="p-img"的div中
+
+2、价格
+放在class="p-price"的div中
+
+3、商品名称
+放在class="p-name"的div中
+
+4、商家ID
+放在class="p-shop"的div中
+
+5、跳转至商品详情页的链接
+将a标签放在class="p-link"的div中
+
+举例说明：
+<div class="goods">
+                <div class="p-img"><img src="../images/goods-1.jpg"></div>
+                <div class="p-price">￥5499</div>
+                <div class="p-name">iphone11</div>
+                <div class="p-shop">Apple官方自营店</div>
+                <div class="p-link"><a href="#">查看详情</a></div>
+  </div>
