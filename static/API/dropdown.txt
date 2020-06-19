@@ -1,0 +1,27 @@
+购物车页面：dropdown.html
+
+放置商品的容器：
+div class="item-list" id="item-list"
+每次有新的商品被加入购物车，就往这个容器里添加一个class="item"的div
+
+每件商品包含如下元素：
+
+1、勾选框
+ <div class="p-checkbox">
+            <input type="checkbox" name="p-radio" ><label for></label>
+  </div>
+
+2、商品信息（需要渲染图片、商品名称、商品规格）
+<div class="p-goods">
+            <div class="p-img"><img src="../images/goods-1.jpg"></div>
+            <div class="p-name">iphone11</div><br>
+            <div class="p-attr">黑色128G</div>
+ </div>
+
+3、商店名称
+<div class="p-shop">Apple官方自营店</div>
+
+4、商品单价
+<div class="p-price">￥<span class="onlyPrice">5999</span></div>
+
+
