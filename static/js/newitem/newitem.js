@@ -1,4 +1,5 @@
-function preview(file,img){  
+function preview(file,img)
+{  
     var prevDiv = document.getElementById(img);  
 
     if (file.files && file.files[0]){     
@@ -24,36 +25,38 @@ function preview(file,img){
 
         //onload 成功读取后 显示图片           
         reader.onload = function(evt){                  
-            prevDiv.innerHTML = '<img src="' + evt.srcElement.result + '" style="max-width:160px;" />';             
+            prevDiv.innerHTML = '<img src="' + evt.srcElement.result + '" style="max-width:220px;" />';             
         }  
     }  
- }
+}
 
-$(function(){
-    $("#submit").click(function()
+ $(function(){
+    
+     $('#btn-submit').click(function()
     {
-        var formData = new FormData();   
+        
+        // 用表单来初始化
+        var formData = new FormData($("#new")[0]);
 
         //将图片文件对象添加到formData中        
-        formData.append('upload', $("#pic")[0].files[0]); 
+        formData.append('img', $("#pic")[0].files[0]); 
+        formData.append('csrfmiddlewaretoken', '{{ csrf_token }}');
 
-        // console.log($("#pic")[0].files[0].name);
         
-       $.ajax({
-           type : 'post',
-           url : '',//这里写后端处理的url
-           data : formData,
-           cache : false,
-           async: false,
-           processData : false, // 不处理发送的数据，因为data值是Formdata对象，不需要对数据做处理
-           contentType : false, // 不设置Content-type请求头
-           success : function()
-           {
-               alert("图片上传成功！");
-           },
-           error : function(){alert("图片上传失败！"); }
-       })
-    })
-});
- 
- 
+        $.ajax({
+            type : 'post',
+            url : '',//这里写后端处理的url
+            data : formData,
+            cache : false,
+            async: false,
+            processData : false, // 不处理发送的数据，因为data值是Formdata对象，不需要对数据做处理
+            contentType : false, // 不设置Content-type请求头
+            success : function()
+            {
+                alert("商品信息上传成功！");
+            },
+            error : function(){alert("商品信息上传失败！"); }
+        })
+
+    });
+ });

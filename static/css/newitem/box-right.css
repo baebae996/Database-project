@@ -1,27 +1,31 @@
-.box {
+.box .box-right {
     width: 350px;
-    margin: 70px auto;
-    background: #f0f0f0;
-    border:2px solid #a1a1a1;
+    height: 100%;
+    float: left;
+    margin-left: 15px;
+    /* margin: 70px auto; */
+    
+    /* border:2px solid #a1a1a1; */
 }
 
-.box .header {
+.box-right .header {
     width: 100%;
     height: 36px;
-    line-height: 40px;
+    line-height: 36px;
     text-align: center;
-    font-size: 60%;
+    font-size: 65%;
 }
 
-.box #new {
+.box-right #new {
     display: block;
     height: 400px;
-    padding: 4% 4% 8% 4%;
+    margin-top: 15px;
+    /* padding: 4% 4% 8% 4%; */
     background: #f0f0f0;
 }
 
 #new #type {
-    width: 324px;
+    width: 352px;
     /* height: 20px; */
     background: #fff;
     border: 1px solid #ccc;
@@ -34,7 +38,7 @@
 
 #new .hint {
     width: 80%;
-    height: 18px;
+    height: 14px;
     /* margin: 0 auto 2px; */
     /* margin-left: 2px; */
     text-align: left;
