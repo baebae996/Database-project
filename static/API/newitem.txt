@@ -1,26 +1,35 @@
-上架新商品的网页：newitem.html
+上架新商品页面： newitem.html
 
-所有数据都放在id=new的表单里面
+使用jQuery通过ajax发送POST请求
+传送数据的类型是FormData
 
-1、商品分类
-id=type的下拉框
-（现在设置的value有：digital、man、woman
-分别表示“数码”、“男装”、“女装”）
+1、商品数据
+除图片以外的数据都放在id=new,name=myform的表单里
 
-2、商品名称
-id=name
+商品类别：
+<select id=type name=type>
+当前有的value：digital、man、woman
 
-3、商品描述
-id=desc
+商品名称：
+<input id=name name=name>
 
-4、商品规格
-id=attr
+商品描述
+<input id=desc name=desc>
 
-5、价格
-id=price
+规格
+<input id=attr name=attr>
 
-6、库存
-id=inventory
+价格
+<input id=price name=price>
 
-7、提交按钮
-id=btn-submit
+库存
+<input id=inventory name=inventory>
+
+2、商品图片
+原始的图片文件是在id=pic的input里
+后通过append方法添加进formData变量里
+
+3、跳转链接
+后端收到POST请求后，跳转到后台管理页面backstage.html
+或
+点击id=link的a标签，跳转到后台管理页面backstage.html
