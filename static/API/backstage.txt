@@ -1,0 +1,84 @@
+商家后台管理页面：backstage.html
+
+页面跳转/事件触发关系：
+商家登录后进入此页面
+在本页面，点击id="addItem"的a标签“上架新商品”, 跳转至newitem.html
+
+在本页面，点击“下架该商品”，通过class="takeoff"的a标签发送GET请求，从而实现对商品的删除
+
+在本页面，点击“保存修改”，通过ajax的POST请求，发送JSON数组
+【每个对象包含三个属性：goodid、price、inventory】
+
+在本页面，点击“添加SKU”，跳转至newSKU.html
+
+需要动态渲染的数据：
+一、商家ID
+id=sellerid
+
+二、在售商品数据
+1、以SPU为单位的信息
+每个SPU的商品图片/名称/描述/销量都放在class=item的div里
+（SPUid渲染在class=item的div标签里）
+图片：class=p-img
+名称：class=p-name
+描述：class=p-desc
+销量：class=p-sales
+
+下架按钮：class=takeoff
+
+2、以SKU为单位的信息
+每个SKU的规格/价格/库存/销量都放在class=sku的div里
+（商品id渲染在class=sku的div标签里）
+规格：class=p-attr
+价格：class=price
+库存：class=inventory
+销量：class=onlySales
+
+3、整体层级结构
+<div class="itemlist" id="itemlist">
+    <div class=item>
+        <div class="p-good">
+	<div class="p-img></div>
+	<div class="p-name"></div>
+	<div class="p-desc"></div>
+        </div>
+        <div class="p-sales"></div>
+        <div class="p-actions"></div>
+    </div>
+
+    <div class="sub">
+        <div class="sub-bar"></div>/*这是固定的导航栏，与数据无关*/
+
+        <div class="sku">
+	<div class="p-attr">绿色256G</div>
+                <div class="p-price">￥<input type="text" value="6799" class="price"></div>
+                <div class="p-inventory"><input type="text" value="5000" class="inventory"></div>
+                <div class="onlySales">3000</div>	
+        </div>
+        <div class="sku"></div>
+        <div class="sku"></div>
+    </div>
+</div>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
