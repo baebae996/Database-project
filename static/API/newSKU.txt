@@ -1,0 +1,15 @@
+添加SKU页面：newSKU.html
+
+在用户点击“立即添加”的按钮后，跳转回backstage.html
+
+表单<form id="newSKU" name="myform">
+
+商品名称：id=name
+
+规格：id=attr
+
+价格：id=price
+
+库存：id=inventory
+
+“立即添加”按钮：id="btn-submit"
