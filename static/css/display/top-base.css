@@ -1,9 +1,9 @@
 /* 顶部区域 */
 .top{
-    width: 100%;
+    width: 1140px;
     height: 70px;
     background-color: white;
-    margin: 20px 0 0 50px;
+    margin: 20px auto 0 auto;
     /* overflow: auto; */
 }
 
@@ -16,11 +16,11 @@
 }
 
 .top .search {
-    width: 490px;
+    width: 470px;
     height: 36px;
     float: left;
     /* border: 1px solid red; */
-    margin-left: 150px;
+    margin-left: 200px;
     margin-top: 10px;
 }
 

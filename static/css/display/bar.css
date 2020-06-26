@@ -1,7 +1,7 @@
 .bar {
-    width: 100%;
+    width: 1240px;
     height: 32px;
-    margin-left: 30px;
+    margin: 0 auto;
     /* overflow: scroll; */
 }
 
@@ -12,7 +12,7 @@
 }
 
 .bar ul li {
-    margin-left: 60px;
+    margin-left: 50px;
     /* padding: 0 22px; */
     font-size: 16px;
 }
