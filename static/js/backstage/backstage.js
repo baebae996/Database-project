@@ -1,28 +1,34 @@
 window.onload=function(){
 
     //展开or收起详细信息的功能begin
-    var unfold=document.getElementsByClassName("unfold")[0];
-    var flag=0;
+    var unfold=document.getElementsByClassName("unfold");
+    
 
-    unfold.onclick=function()
+    for(var i=0;i<unfold.length;i++)
     {
-        var sub=document.getElementsByClassName("sub")[0];
+        unfold[i].flag=0;
+        unfold[i].index=i;
 
-        // var flag=0;
-
-        if(flag==0)
+        unfold[i].onclick=function()
         {
-            sub.style.display="block";
-            flag=1;
-            this.innerHTML="收起详细信息";
-        }else{
-            sub.style.display="none";
-            flag=0;
-            this.innerHTML="展开详细信息";
+            var sub=document.getElementsByClassName("sub")[this.index];
+
+            if(this.flag==0)
+            {
+                sub.style.display="block";
+                this.flag=1;
+                this.innerHTML="收起详细信息";
+            }else{
+                sub.style.display="none";
+                this.flag=0;
+                this.innerHTML="展开详细信息";
+            }
+
         }
 
-    }//展开or收起详细信息的功能end
+    }
 
+    
 
     //监听价格是否被修改的功能begin
     var priceinput=document.getElementsByClassName("price");
